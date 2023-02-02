@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Lista de productos</title>
+  </head>
+  <body>
+    <h1>Lista de productos:</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+      </tr>
+      {% for articulo in products %}
+        <tr>
+          <td>{{ articulo[0] }}</td>
+          <td>{{ articulo[1] }}</td>
+          <td>{{ "{:,}".format(articulo[2]) }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

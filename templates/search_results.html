@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Lista de productos</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for article in results %}
+            <tr>
+                <td>{{ article[0] }}</td>
+                <td>{{ article[1] }}</td>
+                <td>{{ article[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  </body>
+</html>
+
+

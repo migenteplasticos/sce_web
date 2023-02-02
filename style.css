@@ -1,0 +1,50 @@
+/* default styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+/* styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+/* styles for screens smaller than 576px */
+@media (max-width: 576px) {
+    header {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 5px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
