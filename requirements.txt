@@ -1,4 +1,4 @@
-pip3 install --upgrade pip
-pip3 install python-dotenv
-pip3 install flask
-pip3 install pymysql
+pip install --upgrade pip
+pip install python-dotenv
+pip install flask
+pip install pymysql
