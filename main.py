@@ -7,9 +7,11 @@ app = Flask(__name__)
 #secret key
 app.secret_key = 'novaglez'
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def main():
-    return "SCE WEB..."
+    if request.method == 'POST':
+        return redirect(url_for('authenticate'))
+    return render_template('login.html')
 
 @app.route('/articulos')
 def articulos():
