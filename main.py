@@ -21,7 +21,7 @@ def articulos():
 
     load_dotenv()
     #ssl certiticate
-    ssl_cert = os.getcwd() + "\cacert.pem"
+    ssl_cert = os.getcwd() + "/cacert.pem"
 
     #conexion
     db = pymysql.connect(
@@ -45,7 +45,7 @@ def search():
     nombre = request.args.get("nombre")
     load_dotenv()
     #ssl certiticate
-    ssl_cert = os.getcwd() + "\cacert.pem"
+    ssl_cert = os.getcwd() + "/cacert.pem"
     
     if(nombre != ""):
         #conexion
@@ -90,7 +90,7 @@ def authenticate():
 
         load_dotenv()
         #ssl certiticate
-        ssl_cert = os.getcwd() + "\cacert.pem"
+        ssl_cert = os.getcwd() + "/cacert.pem"
 
         #conexion
         db = pymysql.connect(
@@ -144,7 +144,7 @@ def create_user():
 
     load_dotenv()
     #ssl certiticate
-    ssl_cert = os.getcwd() + "\cacert.pem"
+    ssl_cert = os.getcwd() + "/cacert.pem"
 
     #conexion
     db = pymysql.connect(
